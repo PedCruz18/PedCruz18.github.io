@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dev_PedCruz</title>
+    <link rel="stylesheet" href="PagInicial.css">
+    <link rel="icon" href="img/DEVpedcruzloguni.png" type="image/x-icon">
+    <style>
+        /* Adicionando box-sizing para evitar que o conteúdo ultrapasse as margens */
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            overflow-x: hidden; /* Bloqueia rolagem horizontal */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #181818;
+        }
+
+        header {
+            background-image: url(img/meufundomenor.jpg);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            background-size: cover;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex; /* Usa flexbox para centralizar os itens */
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px; /* Limita a largura do container */
+            margin: 0 auto; /* Centraliza o container */
+        }
+
+        .about, .projects, .contact {
+            background-color: rgb(83, 83, 83);
+            color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centraliza o texto */
+        }
+
+        .about img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Centraliza a imagem */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                width: 100%; /* Links ocupam toda a largura em telas pequenas */
+                text-align: center;
+            }
+
+            .about, .projects, .contact {
+                padding: 10px;
+            }
+
+            header {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dev_PedCruz</h1>
+        <p>Desenvolvedor de Sistemas | Tecnologia | Inovação</p>
+    </header>
+
+    <nav>
+        <a href="#about">Eu</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>Sobre Mim</h2>
+            <img src="img/eu.jpg" alt="Uma foto minha">
+            <p>Olá, eu sou Pedro Cruz, um desenvolvedor apaixonado por tecnologia e inovação. Minha missão é criar soluções que ajudem a melhorar a vida das pessoas através de software e sistemas de qualidade.</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projetos</h2>
+            <p>Aqui estão alguns dos meus projetos mais recentes:</p>
+            <p style="font-size: 12px;">1 - Ouça Junto <a href="https://github.com/PedCruz18/OucaJuntos-alpha_0.6">OucaJuntos-alpha_0.6</a></p>
+            <p style="font-size: 12px;">2 - Forca Rivall <a href="https://github.com/PedCruz18/ForcaRivall_Alpha0.1">ForcaRivall_Alpha0.1</a></p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contato</h2>
+            <p style="font-size: 12px;">Entre em contato comigo: <a href="mailto:pedroemanueldasilvacruz@gmail.com">pedroemanueldasilvacruz@gmail.com</a></p>
+            <p style="font-size: 12px;">Instagram: <a href="https://www.instagram.com/pedcruz_18/">pedcruz18</a></p>
+            <p style="font-size: 12px;">Linkedin: <a href="https://www.linkedin.com/in/pedro-cruz-2135b22ba/">PedCruz</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pedro Cruz. <br> Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
